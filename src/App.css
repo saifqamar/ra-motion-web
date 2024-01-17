@@ -1,38 +1,434 @@
-.App {
-  text-align: center;
+
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  /* width: 1280px; */
+  max-width: 1280px;
+  margin: auto;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column{
+  padding-left: 74px;
+  padding-right: 74px;
+}
+
+.header-sec{
+  width: 100%;
+  padding: 20px 0px ;
+}
+
+.header{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .right{
+  width: 4%;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+/* .header .links{
+  width: 90%;
+  
+} */
+
+.right img{
+  width: 100%;
+}
+
+ ul{
+  width: 90%;
+  display: flex;
+  column-gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+ul li{
+  text-decoration: none;
+  
+
+}
+
+ul li a{
+  color:#777777;
+  font-size: 18px;
+}
+
+
+/* Hero sec */
+.hero-sec{
+  margin: auto;
+}
+
+.hero{
+  /* width: 70%; */
+  padding-top: 160px;
+  padding-bottom: 240px ;
+}
+
+
+.hero h1{
+  font-size: 72px;
+  font-weight: 800;
+  
+
+}
+
+
+
+/* Home Block */
+.home-block{
+  /* padding-top: 60px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px 90px;
+  padding-bottom: 60px;
+  margin: 60px 0;
+}
+
+.hb-sec1{
   display: flex;
   flex-direction: column;
+  row-gap: 30px;
+}
+
+
+.hb-sec1 h1{
+  font-size: 66px;
+  font-weight: 900;
+}
+
+.hb-det{
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+.b-line{
+  width: 100%;
+}
+
+.link a{
+  width: fit-content;
+  font-size: 24px;
+  padding-bottom: 2px;
+  color: rgb(20, 20, 20, 0.56);
+  border-bottom: 2px solid rgb(20, 20, 20, 0.56);
+}
+
+
+.hb-sec2{
+  
+}
+
+.blocks{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  gap: 1px;
+}
+
+.block-img{
+  display: flex;
   align-items: center;
+  width: 100%;
+  outline: 1px solid rgb(219, 219, 219, 0.5);
+}
+
+.block-img img{
+  width: 100%;
+}
+
+.build{
+
+  grid-column: 2/4;
+  grid-row: 5/5;
+  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0!important;
+  outline: 1px solid rgb(219 219 219 / 50%);
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+
+.build a{
+  font-size: 24px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* section 3 */
+.hb-sec3{
+  border-top:1px solid rgb(219, 219, 219, 0.5);
+  padding: 60px 0 0;
+}
+
+
+.top-img{
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.top-img img{
+  width: 100%;
+}
+
+.hb-sec3 h2{
+  font-size: 66px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.hb-sec3 h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.hb-sec3 p{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+
+.link-true a{
+  color: black;
+  margin-bottom: 30px;
+}
+
+
+/* Let's Chat */
+.contact{
+  padding: 60px 0px;
+}
+
+.contact span{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lets-talk{
+  width: 60%;
+  font-size: 66px;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+
+/* Footer */
+
+.footer{
+  padding: 60px 0px;
+}
+
+.all-sec{
+  display: grid;
+  grid-gap: 36px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.loc{
+  display: flex;
+  flex-direction: column;
+}
+
+.loc strong{
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: rgb(20, 20, 20, 0.56);
+
+}
+
+.loc a{
+  width: fit-content;
+  font-size: 20px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgb(20, 20, 20, 0.24);
+  color: rgb(20, 20, 20, 0.56);
+}
+
+
+.last-sec{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(20, 20, 20, 0.56);;
+}
+
+
+@media only screen and (max-width: 1024px){
+ .column{
+  padding-left: 32px;
+  padding-right: 32px;
+ }
+
+ .hero{
+  padding-bottom: 120px;
+ }
+
+ .home-block{
+  grid-template-columns: repeat(1, 1fr);
+
+ }
+}
+
+
+@media only screen and (max-width: 800px){
+  .hero h1{
+    font-size: 38px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .column{
+    padding-left: 16px;
+    padding-right: 16px;
+   }
+
+  .hb-sec1 h1{
+    font-size: 28px;
+  }
+
+  .hb-det{
+    font-size: 18px;
+  }
+
+  .link a{
+    font-size: 18px;
+  }
+
+  .contact span{
+    font-size: 20px;
+  }
+
+  .lets-talk{
+    
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 30px;
+  }
+
+  .hb-sec3 h2{
+    font-size: 28px;
+
+  }
+
+  .hb-sec3 h3{
+    font-size: 18px;
+
+  }
+
+  .hb-sec3 p{
+    font-size: 18px;
+
+  }
+
+  .loc strong{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: rgb(20, 20, 20, 0.56);
+  
+  }
+  
+  .loc a{
+    width: fit-content;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(20, 20, 20, 0.24);
+    color: rgb(20, 20, 20, 0.56);
+  }
+
+  .all-sec{
+    max-width: 840px;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
   }
 }
+
+@media only screen and (max-width: 800px){
+  
+
+  .header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .header .right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right img{
+    width: 10%;
+  }
+
+  .nav-toggle{
+    display: block;
+    color: #777777;
+  }
+
+  ul{
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+  
+  }
+  
+  ul li{
+    text-decoration: none;
+    
+  
+  }
+  
+  ul li a{
+    color:#777777;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .links{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    
+  }
+
+  .small-sec{
+    position: fixed;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    transition: all 0.15s;
+  }
+  
+  
+}
+

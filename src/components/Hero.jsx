@@ -1,0 +1,23 @@
+import React from "react";
+
+
+
+const Hero = () => {
+    return(
+        <div className="column">
+
+            <div className="hero-sec column'">
+                
+                <div className="hero">
+                    <h1>Digital product & brand agency</h1>
+                </div>
+            </div>
+
+            <hr />
+        </div>
+
+        
+    )
+}
+
+export default Hero;
