@@ -13,7 +13,7 @@ const Header = (props) => {
     useEffect(() => {
         const headerBack = document.getElementById('header-sec');
         console.log(headerBack.classList)
-        const isDark = props.isDark ?  headerBack.classList.add('bg-neutral-950') : headerBack.classList.add('');
+        const isDark = props.isDark ?  headerBack.classList.add('bg-neutral-950') : headerBack.classList.add('bg-white');
 
     },[])
     
