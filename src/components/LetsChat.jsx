@@ -5,7 +5,7 @@ const LetsChat = () => {
     return(
         <>
             <hr className="hr" />
-            <div className="column">
+            <div className="container column">
                 
                 <div className="contact">
                     <span>Shall we chat?</span>

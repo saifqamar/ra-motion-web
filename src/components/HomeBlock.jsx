@@ -4,7 +4,7 @@ import React from "react";
 const HomeBlock = () => {
 
     return(
-        <div className="column">
+        <div className="container column">
 
             <div className="home-block">
                 {/* Section 1 */}

@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
     return(
-        <div className="column">
+        <div className="container column">
 
             <div className="hero-sec column'">
                 

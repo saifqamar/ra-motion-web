@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Header = (props) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false); 
     
@@ -25,9 +26,9 @@ const Header = (props) => {
 
     return(
         <div id="header-sec" className={isSmallScreen ? "header-sec small-sec": 'header-sec'}>
-            <div className=" header column">
+            <div className=" header container column">
                 <div className="right">
-                    <img src="ramotion.jpg" alt="" />
+                    <Link to={'/'} exact><img src="ramotion.jpg" alt="" /></Link>
                     {isSmallScreen?
                         <button class="nav-toggle" onClick={showlist}>
                             close<FontAwesomeIcon className="icon-menu" icon={icon({name: 'xmark', style: 'solid'})} />
@@ -42,7 +43,7 @@ const Header = (props) => {
                     
                 <ul className={isSmallScreen ? "links": ""}>
                     <li><a href="#">Work</a></li>
-                    <li><Link to="b2b">Industries</Link></li>
+                    <li><Link to="b2b" exact>Industries</Link></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>

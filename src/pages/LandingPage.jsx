@@ -8,8 +8,7 @@ import Footer from '../components/Footer';
 
 const LandingPage = () => {
   return (
-    <div className='container'>
-      <div className=''>
+      <div>
         <Header isDark={false} />
         <Hero />
         <HomeBlock />
@@ -17,7 +16,6 @@ const LandingPage = () => {
         <LetsChat />
         <Footer />
       </div>
-    </div>
   );
 }
 

@@ -5,13 +5,15 @@ import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 
 const Faq = (props) =>{
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     console.log(props.id)
 
     const content = document.getElementsByClassName('c-content');
 
     const collapse = () => {
-        setIsOpen(!isOpen); 
+        const open = setIsOpen(!isOpen); 
+
+        const opened = isOpen ? content[props.id].style.height = 'auto' : content[props.id].style.height = '0px';
         console.log(isOpen);
 
     }
