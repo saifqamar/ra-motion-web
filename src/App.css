@@ -215,6 +215,12 @@ ul li a{
 
 
 /* Let's Chat */
+
+.hr{
+  border-top-width: 0.5px;
+}
+
+
 .contact{
   padding: 60px 0px;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return(
-        <div className="footer ">
+        <div className="footer container">
             <div className="all-sec column">
                 <div className="loc">
                     <strong>Location</strong>
