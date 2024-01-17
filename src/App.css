@@ -274,6 +274,28 @@ ul li a{
 }
 
 
+/* B2b Portfoli */
+.b2b-card-body{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.port-card p{
+  color: #ffffff8f;
+}
+
+
+/* faqs */
+
+.c-content{
+  height: 0;
+  overflow: hidden;
+}
+
+
 @media only screen and (max-width: 1024px){
  .column{
   padding-left: 32px;
@@ -427,6 +449,86 @@ ul li a{
     background: black;
     overflow: hidden;
     transition: all 0.15s;
+  }
+
+  .icon-menu{
+    margin-left: 8px;
+  }
+
+
+  /* b2b hero */
+  .b2b-hero-heading{
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .b2b-hero-p{
+    font-size: 18px;
+  }
+
+  /* branding app heading */
+  .brandinapp-heading{
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .b2b-body{
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+
+  .brandingapp-para{
+    font-size: 18px;
+  }
+
+  .brandingapp-para2{
+    padding-bottom: 0px;
+  }
+
+
+  /* b2b portfolio */
+  .b2b-card-body{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    /* grid-template-rows: repeat(auto,1fr); */
+    row-gap: 48px;
+    column-gap: 60px;
+  }
+
+  .card-link{
+    font-size: 28px;
+  }
+
+  .port-card-det{
+    font-size: 20px;
+  }
+
+  /* b2b strategies sec */
+  .startegies-heading{
+    font-size: 28px;
+  }
+
+  .startegies-para{
+    font-size: 18px;
+  }
+
+  /* b2b clients cards */
+  .bc-whole-sec{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* faq */
+
+  .faq h3{
+    font-size: 18px;
+  }
+
+  .c-content p{
+    font-size: 18px;
+  }
+
+  .faq-body{
+    padding: 20px 0px;
   }
   
   
